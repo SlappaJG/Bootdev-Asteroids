@@ -55,12 +55,7 @@ class Player(circleshape.CircleShape):
         self.position += rotated_with_vector_speed
         
     def shoot(self) -> None:
-        
-        if self.shot_cooldown_time > 0:
-                pass
-        else:
-            self.shot_cooldown_time = PLAYER_SHOOT_COOLDOWN_SECONDS
-                
+                        
         new_shot = shot.Shot(self.position.x, self.position.y, SHOT_RADIUS)
         
         new_shot_vector = pygame.Vector2(0, 1)
