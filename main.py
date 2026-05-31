@@ -32,7 +32,7 @@ def main():
             group.update(dt)
         
         for group in drawable:
-            player.draw(screen)
+            group.draw(screen)
         
         pygame.display.flip()
         
